@@ -18,9 +18,14 @@ namespace Lab0
             for (int i = 1; i <= max; i++)
             {
                 String outputString = "";
+                //Fizz test
                 if (i % 3 == 0) outputString += "Fizz";
+                //Buzz test
                 if (i % 5 == 0) outputString += "Buzz";
+
+                //Print number if it didn't past any tests
                 if (outputString == "") Console.WriteLine(i);
+                //Print the text depending on passed tests
                 else Console.WriteLine(outputString);
             }
         }
